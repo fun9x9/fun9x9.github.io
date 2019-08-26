@@ -20,4 +20,4 @@ tags:
 |---|---|---|---|---|
 |hostname|echo $HOSTNAME|echo $HOSTNAME|echo $HOSTNAME|echo $HOSTNAME|
 |server manufacturer|/usr/bin/prtconf|parstatus|prtconf|dmesg\|grep "DMI:"|
-
+...

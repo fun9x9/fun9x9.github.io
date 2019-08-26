@@ -19,5 +19,5 @@ tags:
 |구분|AIX|HP_UX|SunOS|Linux(RHEL)|
 |---|---|---|---|---|
 |hostname|echo $HOSTNAME|echo $HOSTNAME|echo $HOSTNAME|echo $HOSTNAME|
-|server manufacturer|/usr/bin/prtconf|parstatus|prtconf|dmesg|grep "DMI:"|
+|server manufacturer|/usr/bin/prtconf|parstatus|prtconf|dmesg\|grep "DMI:"|
 

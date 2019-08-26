@@ -1,5 +1,5 @@
 ---
-title: "운영체제 별 시스템 명령어"
+title: "운영체제 별 시스템 명령어 (System command by OS)"
 date: 2015-01-02T11:03:00+09:00
 categories:
   - IT
@@ -15,7 +15,7 @@ tags:
   - RHEL
   - SunOS
 ---
-# 운영체제 별 시스템 명령어 (System command by OS)
+
 |구분|AIX|HP_UX|SunOS|Linux(RHEL)|
 |:---:|:---:|:---:|:---:|:---:|
 |hostname|echo $HOSTNAME||||

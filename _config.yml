@@ -112,6 +112,12 @@ comments:
   disqus:
     shortname: "https-fun9x9-github-io"
 
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-146438062-1"
+    anonymize_ip: false # default
+
 category_archive:
   type: liquid
   path: /categories/

@@ -110,7 +110,7 @@ author:
   name             : "HS Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "한글 한글"
-  location         : "Seoul, Korea, aaaaaaaaaaaa"
+  location         : "Seoul, Korea"
   email            :
   links:
     - label: "Email"

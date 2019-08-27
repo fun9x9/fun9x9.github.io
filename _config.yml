@@ -58,9 +58,11 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "HS Lee"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "내가 볼려고 쓰는 블로그."
+  name      : "HS Lee"
+  avatar    : "/assets/images/bio-photo.jpg"
+  bio       : "내가 볼려고 쓰는 블로그."
+  location  : "Seoul, Korea"
+  email     : "fux9x9@gmail.com"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

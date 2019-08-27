@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "HS Lee"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "심심"
+  bio    : "내가 볼려고 쓰는 블로그."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

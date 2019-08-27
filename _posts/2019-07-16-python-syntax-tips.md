@@ -87,17 +87,17 @@ heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
 for name, hero in zip(names, heroes):
     print(name + ' is actually ' + hero)
 ```
-위 아래 동일
 ```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
 universes = ['Marvel', 'DC', 'Marvel', 'DC']
 for name, hero, universe in zip(names, heroes, universes):
     print(name + ' is actually ' + hero + ' from ' + universe)
+```
+```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
 universes = ['Marvel', 'DC', 'Marvel', 'DC']
-
 for values in zip(names, heroes, universes):
     print(values[0] + ' is actually ' + values[1] + ' from ' + values[2])
 ```
@@ -132,10 +132,16 @@ y = 20
 tmp = y
 y = x
 x = tmp
+```
+위 아래 동일
+```python
 x = 10
 y = 20
 
 x, y = y, x
+```
+위 아래 동일
+```python
 x, y = 10, 20
 
 x, y = y, x
@@ -149,6 +155,9 @@ ages = {
 }
 
 age = ages['Dick']
+```
+
+```python
 ages = {
     'Mary'      : 31,
     'Jonathan'  : 28
@@ -162,7 +171,13 @@ ages = {
     'Mary'      : 31,
     'Jonathan'  : 28
 }
+```
 
+```python
+ages = {
+    'Mary'      : 31,
+    'Jonathan'  : 28
+}
 # Good way
 age = ages.get('Dick', 'Unknown')
 ```
@@ -171,15 +186,13 @@ age = ages.get('Dick', 'Unknown')
 ## 문자열 뒤집기(Reversing a string)
 ```python
 a ="GeeksForGeeks"
-print("Reverse is", a[::-1]) 
-# Reverse is skeeGroFskeeG
+print("Reverse is", a[::-1]) # Reverse is skeeGroFskeeG
 ```
  
 ## 리스트에서 스트링 만들기(Create a single string from all the elements in list)
 ```python
 a = ["Geeks", "For", "Geeks"] 
-print(" ".join(a)) 
-# Geeks For Geeks
+print(" ".join(a)) # Geeks For Geeks
 ```
  
 ## 비교연산자 연결(Chaining Of Comparison Operators.)
@@ -207,6 +220,9 @@ print(max(set(test), key = test.count)) # 4
 ## IF 단순화
 ``` python
 if m in [1,3,5,7]:
+```
+위 아래 동일
+``` python
 if m==1 or m==3 or m==5 or m==7:
 ```
  

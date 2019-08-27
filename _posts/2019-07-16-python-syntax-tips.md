@@ -9,8 +9,6 @@ tags:
   - syntax
 ---
 
-# 수정중
-
 - Tested Environment : python3
 
 - 참고:
@@ -87,6 +85,7 @@ heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
 for name, hero in zip(names, heroes):
     print(name + ' is actually ' + hero)
 ```
+---
 ```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
@@ -94,6 +93,7 @@ universes = ['Marvel', 'DC', 'Marvel', 'DC']
 for name, hero, universe in zip(names, heroes, universes):
     print(name + ' is actually ' + hero + ' from ' + universe)
 ```
+위 아래 동일
 ```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
@@ -103,26 +103,20 @@ for values in zip(names, heroes, universes):
 ```
 
 ## 튜플/리스트 언패킹(tuple unpacking)
+- 리스트도 동일하게 동작
 ```python
-a, b = (1, 2)
-# a = 1, b = 2
+a, b = (1, 2) # a = 1, b = 2
 
-a, _ = (1, 2)
-# a = 1
+a, _ = (1, 2) # a = 1
 
-a, b, *c = (1, 2, 3, 4, 5)
-# a = 1, b = 2, c = [3, 4, 5]
+a, b, *c = (1, 2, 3, 4, 5) # a = 1, b = 2, c = [3, 4, 5]
 
-a, b, *_ = (1, 2, 3, 4, 5)
-# a = 1, b = 2
+a, b, *_ = (1, 2, 3, 4, 5) # a = 1, b = 2
 
-a, b, *c, d = (1, 2, 3, 4, 5, 6)
-# a = 1, b = 2, c = [3, 4, 5], d = 6
+a, b, *c, d = (1, 2, 3, 4, 5, 6) # a = 1, b = 2, c = [3, 4, 5], d = 6
 
-a, b, *_, d = (1, 2, 3, 4, 5, 6, 7)
-# a = 1, b = 2, d = 6
+a, b, *_, d = (1, 2, 3, 4, 5, 6, 7) # a = 1, b = 2, d = 6
 ```
-- 리스트도 위와 동일하게 동작
  
 ## 변수 바꾸기 (In-Place Swapping)
 ```python
@@ -167,10 +161,6 @@ if 'Dick' in ages:
     age = ages['Dick']
 else:
     age = 'Unknown'
-ages = {
-    'Mary'      : 31,
-    'Jonathan'  : 28
-}
 ```
 
 ```python
@@ -229,8 +219,8 @@ if m==1 or m==3 or m==5 or m==7:
 ## 딕셔너리 스위치처럼 사용하기(Use A Dictionary To Store A Switch.)
 ```python
 stdcalc = {
-	'sum': lambda x, y: x + y,
-	'subtract': lambda x, y: x - y
+  'sum': lambda x, y: x + y,
+  'subtract': lambda x, y: x - y
 }
 
 print(stdcalc['sum'](9,3))      # 12
@@ -239,6 +229,7 @@ print(stdcalc['subtract'](9,3)) # 6
  
 ## 재귀호출 제한값 바꾸기(Reset Recursion Limit.)
 - 기본값 : 1000
+
 ```python
 import sys
 

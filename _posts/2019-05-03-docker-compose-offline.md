@@ -25,17 +25,20 @@ docker load < image-name.tar
 ```sh
 docker images
 ```
+<pre>
 REPOSITORY     TAG             IMAGE ID           CREATED           SIZE
 image-name     1.1.0             17aadaadaa11     1 hours ago       1.7GB
+</pre>
 
 ### 도커 컴포저 파일 수정 (offline env)
 ```sh
 vi docker-compose.yml 
 ```
+<pre>
 ...
 image: 17aadaadaa11
 ...
-
+</pre>
 ```sh
 docker-compose up -d
 ```

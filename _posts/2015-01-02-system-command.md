@@ -4,6 +4,7 @@ date: 2015-01-02T11:03:00+09:00
 categories:
   - IT
 tags:
+  - tips
   - system
   - 시스템
   - command
@@ -16,7 +17,9 @@ tags:
   - SunOS
 ---
 
-|구분|AIX|HP_UX|SunOS|Linux(RHEL)|
+- tested : AIX, HP-UX, SunOS, Linux(RHEL)
+
+|구분|AIX|HP-UX|SunOS|Linux(RHEL)|
 |:---:|:---:|:---:|:---:|:---:|
 |hostname|echo $HOSTNAME||||
 |server<br>manufacturer|/usr/bin/prtconf|parstatus|prtconf|dmesg\|grep "DMI:"|

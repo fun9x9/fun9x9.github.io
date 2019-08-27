@@ -4,14 +4,21 @@ date: 2016-05-26T16:11:00+09:00
 categories:
   - IT
 tags:
+  - tips
   - sh
   - shell
   - script
-  - Unix
-  - Linux
   - character
   - tr
+  - Unix
+  - Linux
+  - AIX
+  - HP-UX
+  - SunOS
+  - RHEL
 ---
+
+- tested : AIX, HP-UX, SunOS, Linux(RHEL)
 
 ```sh
 tr -cd '\11\12\15\40-\176' < file-with-binary-chars > clean-file

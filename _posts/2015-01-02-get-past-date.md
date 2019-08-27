@@ -4,12 +4,21 @@ date: 2015-01-02T13:44:00+09:00
 categories:
   - IT
 tags:
+  - tips
   - sh
   - shell
   - past
   - date
   - script
+  - AIX
+  - HP-UX
+  - SunOS
+  - Linux
+  - RHEL
+  - Ubuntu
 ---
+
+- tested : AIX, HP-UX, SunOS, Linux(RHEL, Ubuntu)
 
 ```sh
 # ===========================< 과거날짜 구하기 >==================================

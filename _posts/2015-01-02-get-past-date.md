@@ -18,7 +18,7 @@ tags:
   - Ubuntu
 ---
 
-- tested : AIX, HP-UX, SunOS, Linux(RHEL, Ubuntu)
+- Tested Environment : AIX, HP-UX, SunOS, Linux(RHEL, Ubuntu)
 
 ```sh
 # ===========================< 과거날짜 구하기 >==================================

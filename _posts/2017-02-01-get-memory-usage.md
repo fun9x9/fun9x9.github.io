@@ -18,7 +18,7 @@ tags:
   - Linux
 ---
 
-- tested : AIX, HP-UX, SunOS, Linux(RHEL)
+- Tested Environment : AIX, HP-UX, SunOS, Linux(RHEL)
 
 ```sh
 OS_TYPE=$(uname)

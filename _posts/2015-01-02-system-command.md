@@ -17,7 +17,7 @@ tags:
   - SunOS
 ---
 
-- tested : AIX, HP-UX, SunOS, Linux(RHEL)
+- Tested Environment : AIX, HP-UX, SunOS, Linux(RHEL)
 
 |구분|AIX|HP-UX|SunOS|Linux(RHEL)|
 |:---:|:---:|:---:|:---:|:---:|

@@ -9,6 +9,8 @@ tags:
   - syntax
 ---
 
+# 수정중
+
 - Tested Environment : python3
 
 - 참고:
@@ -32,7 +34,7 @@ if condition:
 else:
     x = 0
 ```
-
+위 아래 동일
 ```python
 x = 1 if condition else 0
 ```
@@ -42,6 +44,9 @@ x = 1 if condition else 0
 fd = open('text.txt', 'r')
 str = fd.read()
 fd.close()
+```
+위 아래 동일
+```python
 with open('text.txt', 'r') as fd:
     str = fd.read()
 ``` 
@@ -49,17 +54,19 @@ with open('text.txt', 'r') as fd:
 ## enumerate
 ```python
 names = ['Corey', 'Chiris', 'Dave', 'Travis']
-
 index = 0
 for name in names:
     print(index, name)
     index += 1
+```
+위 아래 동일
+```python
 names = ['Corey', 'Chiris', 'Dave', 'Travis']
-
 for index, name in enumerate(names):
     print(index, name)
+```
+```python
 names = ['Corey', 'Chiris', 'Dave', 'Travis']
-
 # 인덱스 시작을 1부터
 for index, name in enumerate(names, start=1):
     print(index, name)
@@ -69,19 +76,22 @@ for index, name in enumerate(names, start=1):
 ```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
-
 for index, name in enumerate(names):
     hero = heroes[index]
     print(name + ' is actually ' + hero)
+```
+위 아래 동일
+```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
-
 for name, hero in zip(names, heroes):
     print(name + ' is actually ' + hero)
+```
+위 아래 동일
+```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
 universes = ['Marvel', 'DC', 'Marvel', 'DC']
-
 for name, hero, universe in zip(names, heroes, universes):
     print(name + ' is actually ' + hero + ' from ' + universe)
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']

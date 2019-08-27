@@ -104,6 +104,7 @@ for values in zip(names, heroes, universes):
 
 ## 튜플/리스트 언패킹(tuple unpacking)
 - 리스트도 동일하게 동작
+
 ```python
 a, b = (1, 2) # a = 1, b = 2
 

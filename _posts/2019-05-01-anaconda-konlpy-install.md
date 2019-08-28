@@ -1,5 +1,5 @@
 ---
-title: "anaconda환경에서 konlpy 설치 (how to install konlpy on anaconda)"
+title: "anaconda환경에서 konlpy 설치 (install konlpy on anaconda)"
 date: 2019-05-01T15:47:00+09:00
 categories:
   - IT

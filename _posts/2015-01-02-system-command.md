@@ -6,9 +6,7 @@ categories:
 tags:
   - tips
   - system
-  - 시스템
   - command
-  - 명령어
   - Unix
   - AIX
   - HP-UX

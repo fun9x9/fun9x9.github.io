@@ -15,7 +15,7 @@ tags:
   - [https://mingrammer.com/underscore-in-python/](https://mingrammer.com/underscore-in-python/)
   - [https://www.geeksforgeeks.org/10-essential-python-tips-tricks-programmers/](https://www.geeksforgeeks.org/10-essential-python-tips-tricks-programmers/)
   - [https://www.techbeamers.com/essential-python-tips-tricks-programmers/](https://www.techbeamers.com/essential-python-tips-tricks-programmers/)
-
+-  [https://realpython.com/python-tricks/](https://realpython.com/python-tricks/)
  
 ## 언더스코어(underscore, _) 
 - 다음과 같은 5가지 상황에서 사용된다.
@@ -228,7 +228,7 @@ print(stdcalc['sum'](9,3))      # 12
 print(stdcalc['subtract'](9,3)) # 6
 ```
  
-## 재귀호출 제한값 바꾸기(Reset Recursion Limit.)
+## 재귀호출 제한값 바꾸기 (Reset Recursion Limit.)
 - 기본값 : 1000
 
 ```python
@@ -245,4 +245,38 @@ print(sys.getrecursionlimit())  # 1001
 ```python
 print("http://www.google.com".startswith(("http://", "https://"))) # True
 print("http://www.google.co.uk".endswith((".com", ".co.uk"))) # True
+```
+
+## 딕셔너리 합치기 (merge dictionaries)
+```python
+x = {'a': 1, 'b': 2}
+y = {'b': 3, 'c': 4}
+z = {**x, **y}
+print(z) # {'a': 1, 'b': 3, 'c': 4}
+```
+
+## 튜플, 딕셔너리 함수 아규먼트 전달 (function argument unpacking)
+```python
+def myfunc(x, y, z):
+    print(x, y, z)
+
+tuple_vec = (1, 0, 1)
+dict_vec = {'x': 1, 'y': 0, 'z': 1}
+
+myfunc(*tuple_vec)  # 1, 0, 1
+myfunc(**dict_vec)  # 1, 0, 1
+```
+
+## 람다(lambda)
+```python
+add = lambda x, y: x + y
+add(1, 2)
+```
+```python
+def add(x, y):
+    return x + y
+add(1, 2)
+```
+```python
+(lambda x, y: x + y)(1, 2)
 ```

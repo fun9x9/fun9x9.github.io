@@ -183,7 +183,7 @@ print("Reverse is", a[::-1]) # Reverse is skeeGroFskeeG
 ## 리스트에서 스트링 만들기(Create a single string from all the elements in list)
 ```python
 a = ["Geeks", "For", "Geeks"] 
-print(" ".join(a)) # Geeks For Geeks
+print(','.join(a)) # Geeks,For,Geeks
 ```
  
 ## 비교연산자 연결(Chaining Of Comparison Operators.)

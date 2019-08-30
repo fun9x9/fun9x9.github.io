@@ -15,7 +15,7 @@ tags:
   - [https://mingrammer.com/underscore-in-python/](https://mingrammer.com/underscore-in-python/)
   - [https://www.geeksforgeeks.org/10-essential-python-tips-tricks-programmers/](https://www.geeksforgeeks.org/10-essential-python-tips-tricks-programmers/)
   - [https://www.techbeamers.com/essential-python-tips-tricks-programmers/](https://www.techbeamers.com/essential-python-tips-tricks-programmers/)
--  [https://realpython.com/python-tricks/](https://realpython.com/python-tricks/)
+  - [https://realpython.com/python-tricks/](https://realpython.com/python-tricks/)
  
 ## 언더스코어(underscore, _) 
 - 다음과 같은 5가지 상황에서 사용된다.

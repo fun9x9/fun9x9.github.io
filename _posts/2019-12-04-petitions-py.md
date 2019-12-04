@@ -24,6 +24,7 @@ tags:
 ## 코드(code)
 - [github](https://github.com/huisung/president_go_kr_petitions_scraping)
 - [구글 코랩에서 실행해보기 Open in Colab](https://colab.research.google.com/github/huisung/president_go_kr_petitions_scraping/blob/master/get_petition.ipynb)
+
 ```python
 import sys
 

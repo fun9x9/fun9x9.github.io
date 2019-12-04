@@ -9,6 +9,7 @@ tags:
   - petition
 
 ---
+# 파이썬 청와대 국민청원 스크랩핑(python korea government petitions scraping)
 - Tested Environment : python3, google colaboratory 
 - 참고링크 중 "국민청원 데이터셋 CSV"의 내용을 토대로 수정하여 작성
 - 1건당 1초(사이트에 대기시간이 1초씩 설정되어 있는듯..)

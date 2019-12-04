@@ -7,6 +7,8 @@ tags:
   - scraping
   - python
   - petition
+  - 국민청원
+  - 청와대
 
 ---
 ### 파이썬 청와대 국민청원 스크랩핑(python korea government petitions scraping)

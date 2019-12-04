@@ -56,7 +56,7 @@ def get_petition(number):
     base_url='https://www1.president.go.kr/petitions/'
     try:
         wd.get(base_url+str(number))
-        element = WebDriverWait(wd, 10).until(
+        element = WebDriverWait(wd, 2).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'petitionsView_title'))
             )
         bs = BeautifulSoup(wd.page_source, 'html.parser')

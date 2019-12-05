@@ -15,7 +15,7 @@ tags:
 ---
 - Tested Environment : python3, google colaboratory 
 - 참고링크 중 "국민청원 데이터셋 CSV"의 내용을 토대로 수정하여 작성
-- 1건당 1초(사이트에 대기시간이 1초씩 설정되어 있는듯..)
+- 1건당 1-5초걸리는데...
 
 - 참고:
   - [국민청원 데이터셋 CSV](https://newhiwoong.github.io/%EA%B5%AD%EB%AF%BC%EC%B2%AD%EC%9B%90/%EA%B5%AD%EB%AF%BC%EC%B2%AD%EC%9B%90-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B)
@@ -59,7 +59,8 @@ def get_petition(number):
         element = WebDriverWait(wd, 2).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'petitionsView_title'))
             )
-        bs = BeautifulSoup(wd.page_source, 'html.parser')
+        #bs = BeautifulSoup(wd.page_source, 'html.parser')
+        bs = BeautifulSoup(wd.page_source, 'lxml')
 
         progress = bs.find('div',{'class':'petitionsView_progress'}).get_text().strip()
         title = bs.find('h3',{'class':'petitionsView_title'}).get_text().strip()

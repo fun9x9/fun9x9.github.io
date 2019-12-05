@@ -15,7 +15,7 @@ tags:
 ---
 - Tested Environment : python3, google colaboratory 
 - 참고링크 중 "국민청원 데이터셋 CSV"의 내용을 토대로 수정하여 작성
-- 1건당 1-5초걸리는데...
+- 1건당 1-2초(google colab에서는 더 느리고 시간이 지날수록 많이 느려짐, 로컬에서 실행하길 권장함)
 
 - 참고:
   - [국민청원 데이터셋 CSV](https://newhiwoong.github.io/%EA%B5%AD%EB%AF%BC%EC%B2%AD%EC%9B%90/%EA%B5%AD%EB%AF%BC%EC%B2%AD%EC%9B%90-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B)
@@ -30,7 +30,7 @@ tags:
 ```python
 import sys
 
-# install chromium, its driver, and selenium
+# install chromium, its driver, and seleniu함
 if 'google.colab' in sys.modules:
     !apt-get update
     !apt install chromium-chromedriver

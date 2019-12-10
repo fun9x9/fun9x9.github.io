@@ -10,6 +10,7 @@ tags:
 ---
 
 ## 파일 내용 찾아 바꾸기 (find replace on file)
+
 ```sh
 perl -pi -e 's/1234/5678/g' test.txt
 ```

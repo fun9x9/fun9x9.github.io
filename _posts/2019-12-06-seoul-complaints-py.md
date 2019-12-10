@@ -12,16 +12,20 @@ tags:
   - 응답소
 
 ---
+
 ### 파이썬 서울시 민원(응답소) 스크래핑 (python seoul complaints scraping)
+
 ---
-- Tested Environment : python3, google colaboratory 
+
+- Tested Environment : python3, google colaboratory
 
 - 참고사이트 코드를 수정하여 작성
 - 참고 : [[파이썬] BS4 서울시 응답소 크롤링](https://systemtrade.tistory.com/350)
 
 ### 코드(code)
-  - [github](https://github.com/huisung/eungdapso_seoul_go_kr_complaints_scraping)
-  - [구글 코랩에서 실행해보기 Open in Colab](https://colab.research.google.com/github/huisung/eungdapso_seoul_go_kr_complaints_scraping/blob/master/get_seoul_complaints.ipynb)
+
+- [github](https://github.com/huisung/eungdapso_seoul_go_kr_complaints_scraping)
+- [구글 코랩에서 실행해보기 Open in Colab](https://colab.research.google.com/github/huisung/eungdapso_seoul_go_kr_complaints_scraping/blob/master/get_seoul_complaints.ipynb)
 
 ```python
 import urllib.request
@@ -37,14 +41,14 @@ else:
 def get_seoul_complaints(pages=1, search_str=None, sdate=None, edate=None):
     list_url = 'http://eungdapso.seoul.go.kr/Shr/Shr01/Shr01_lis.jsp'
     detail_url = 'http://eungdapso.seoul.go.kr/Shr/Shr01/Shr01_vie.jsp'
-    
+
     error_cnt = 0
     rheader = {}
     rtn_list = [('date', 'title', 'contents', 'answer')]
     try:
         for page in tqdm(range(1, pages+1)):
             rheader['page'] = str(page)
-            
+
             if search_str is not None:
                 rheader['search_flag'] = 'Y'
                 rheader['mSearchGB'] = 'SJCN'
@@ -56,27 +60,27 @@ def get_seoul_complaints(pages=1, search_str=None, sdate=None, edate=None):
                 rheader['StartDate'] = ''.join(sdate)
                 rheader['EndDate_out'] = '-'.join(edate)
                 rheader['EndDate'] = '-'.join(edate)
-        
-            request_header = urllib.parse.urlencode (rheader)   
-            request_header = request_header.encode ('utf-8')           
+
+            request_header = urllib.parse.urlencode (rheader)
+            request_header = request_header.encode ('utf-8')
             url = urllib.request.Request (list_url, request_header )
-            res = urllib.request.urlopen(url). read(). decode('utf-8')    
-            
+            res = urllib.request.urlopen(url). read(). decode('utf-8')
+
             bs = BeautifulSoup(res , 'html.parser' )
-            listbox = bs.find_all ('li', class_='pclist_list_tit42') 
-            clist = []   
+            listbox = bs.find_all ('li', class_='pclist_list_tit42')
+            clist = []
             for i in listbox :
-                clist .append (re.search ('\d{14}', i.find('a')['href']). group() ) 
-            
+                clist .append (re.search ('\d{14}', i.find('a')['href']). group() )
+
             for p in clist :
-                request_header = urllib.parse.urlencode ( {'RCEPT_NO' : str(p) } )    
+                request_header = urllib.parse.urlencode ( {'RCEPT_NO' : str(p) } )
                 request_header = request_header.encode ( 'utf-8' )
-            
+
                 url = urllib.request.Request(detail_url, request_header)
                 res = urllib.request.urlopen(url). read(). decode('utf-8')
-            
+
                 bs = BeautifulSoup(res, 'html.parser')
-            
+
                 title = bs.find('th', text = re.compile('제목')).parent.find('td').get_text().strip()
                 adate = bs.find('th', text = re.compile('공개일')).parent.find('td').get_text().strip()
                 contents = bs.find('p', class_='question_title').parent.get_text()[8:].strip()
@@ -90,7 +94,7 @@ def get_seoul_complaints(pages=1, search_str=None, sdate=None, edate=None):
         if error_cnt == 100:
             rtn_list.append(('error100', '', '', ''))
             return rtn_list
-    
+
     return rtn_list
 
 

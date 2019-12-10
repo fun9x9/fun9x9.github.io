@@ -12,6 +12,7 @@ tags:
 ---
 
 ### link
+
 - [기본설치(basic)](https://www.putty.org/)
 - [탭관련(tab)](https://sourceforge.net/projects/putty-nd/)
 - [색관련(color themes)](https://github.com/AlexAkulov/putty-color-themes)

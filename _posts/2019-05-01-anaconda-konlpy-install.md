@@ -11,20 +11,23 @@ tags:
   - windows
 ---
 
-- Tested Environment : 
+- Tested Environment :
   - Windows10
   - conda 4.6.14
   - python 3.7
 
 ### 관리자권한으로 conda prompt실행
+
 ```sh
 conda install -c conda-forge jpype1
 ```
 
 ### 관리자권한으로 명령 프롬프트 실행
+
 ```sh
 pip install konlpy
 ```
 
 ### [자바(JVM)설치 필요](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
-- 설치 후 JAVA_HOME 및 Path 설정 필요 
+
+- 설치 후 JAVA_HOME 및 Path 설정 필요

@@ -37,9 +37,9 @@ case $OS_TYPE in
              else if ( index($5, "M") > 0 ) { FREE=FREE/1000; }
              else if ( index($5, "K") > 0 ) { FREE=FREE/1000/1000; }
              else { FREE=FREE/1000/1000/1000; }
-             printf "%3d%\n", 100*(TOTAL-FREE)/TOTAL }' 
+             printf "%3d%\n", 100*(TOTAL-FREE)/TOTAL }'
     ;;
-    "AIX") 
+    "AIX")
         if [ $(uname -v) -ge 7 ]
         then
             vmstat -v |grep computational |awk '{printf "%3d\n", $1}'

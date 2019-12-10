@@ -12,6 +12,7 @@ tags:
 ---
 
 ### link
+
 - [web](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 - [javascript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 - [JS튜토리얼](https://developer.mozilla.org/ko/docs/A_re-introduction_to_JavaScript)

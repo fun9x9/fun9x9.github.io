@@ -19,7 +19,7 @@ tags:
 
 |구분|AIX|HP-UX|SunOS|Linux(RHEL)|
 |:---:|:---:|:---:|:---:|:---:|
-|hostname|echo $HOSTNAME||||
+|hostname|echo $(hostname)||||
 |server<br>manufacturer|/usr/bin/prtconf|parstatus|prtconf|dmesg\|grep "DMI:"|
 |server<br>model|/usr/sbin/prtconf<br>uname -M|model<br>parstatus|prtconf<br>uname -i| dmesg\|grep "DMI:"|
 |os|uname -a||||
